@@ -1,0 +1,175 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan:hsl(184, 100%, 22%) ;
+    --very-dark : hsl(179, 100%, 13%) ;
+
+    --tra-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray : hsl(0, 0%, 95%);
+  
+}
+
+body{
+   
+    /* width: 100wh; */
+  font-size: 15px; 
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  height: 100vh;
+  font-family: 'Big Shoulders Display', cursive;
+
+}
+div{
+    /* border: 1px red solid; */
+    
+}
+
+
+.container{
+    
+
+   width: 950px;
+   height: 500px;
+   display: flex;  
+   
+}
+
+.col1{
+    border-radius: 20px 0 0 20px;
+}
+.col3{
+    border-radius: 0 20px 20px 0px;
+}
+
+.box
+{
+    width: 33.3%;
+    height: 100%;
+    padding: 60px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+img{
+    width: 32%;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 40px;
+    color: var(--very-light-gray) ;
+}
+
+p {
+    color: var(--tra-white-paragraphs);
+    height: 72px;
+    /* width: 148px; */
+    letter-spacing: 1px;
+    line-height: 23px;
+}
+/* position title */
+.col1Title, .col2Title, .col3Title{
+    margin-top: -75px;
+}
+
+
+/* position paragraph */
+.col1Info, .col2Info, .col3Info{
+    margin-top: -90px;
+}
+
+/* button position */
+.col1bottom,.col2bottom,.col3bottom {
+   margin-bottom: -15px;
+}
+
+button{
+
+    width: 145px;
+    height: 47px;
+    text-decoration:none ;
+    font-weight: 600;
+    border-radius: 20px;
+    border: 0px;
+    border: 2.5px white solid;
+}
+
+.col1 button{
+    color:var( --bright-orange); 
+    
+}
+.col2 button{
+    color:var(--dark-cyan); ;
+}
+.col3 button{
+    color: var(--very-dark);;
+}
+
+
+.col1{
+    background-color: var( --bright-orange);
+}
+
+.col2{
+    background-color: var(--dark-cyan);
+}
+
+.col3{
+    background-color: var(--very-dark);
+}
+
+/* paragraphs */
+.col1 p{
+    width: 162px;
+}
+
+.col2 p{
+     width: 171px;
+}
+
+.col3 p{
+    width: 177px;
+}
+
+/* hover */
+
+.col1 button:hover{
+
+   background-color: transparent;
+   color:var( --very-light-gray);
+   cursor: pointer;
+}
+.col2 button:hover{
+
+    background-color: transparent;
+    color:var( --very-light-gray);
+    cursor: pointer;
+ }
+ .col3 button:hover{
+
+    background-color: transparent;
+    color:var( --very-light-gray);
+    cursor: pointer;
+ }
+
+/* responsive, will make when as I got time*/
+/* @media only screen and (max-width :375px){
+    .container{
+        flex-direction: column;
+    }
+
+    .box{
+        width: 90vw;
+        height: 400px;
+    }
+} */
+
